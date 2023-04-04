@@ -1,0 +1,67 @@
+section{
+    height:100;
+  } 
+  
+  heading{
+    height: calc(100% - 15px);
+  }
+            
+p:hover {
+    background-color: orange;               
+}
+
+ li:nth-child(even) {
+    color: green;
+}
+
+.container {
+  position: relative;
+}
+
+.black-box {
+  position: relative;
+  z-index: 1;
+  border: 2px solid black;
+  height: 200px;
+  margin: 30px;
+}
+
+.gray-box {
+  position: absolute;
+  z-index: 3; /* gray box will be above both green and black box */
+  background: lightgray;
+  height: 30px;  
+  width: 70%;
+  left: 50px;
+  top: 170px;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 2; /* green box will be above black box */
+  background: lightgreen;
+  width: 35%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+}
+
+ 
+#moon {
+  height: 50px;
+  width: 50px;
+  background-color: #c49f54;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  z-index: 3;
+}
+#triangle {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #bf0d0d;
+	border-bottom: 25px solid transparent;
+  z-index:4;
+}
